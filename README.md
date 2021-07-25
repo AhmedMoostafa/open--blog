@@ -68,9 +68,10 @@ https://open-blog-api.herokuapp.com/feed/posts
  > All Routes need to be authunticated
  
 ## To use Socket-IO (Client Side)
-## Install
+### Install　
 `$ npm i socket.io-client`
-
+　
+#### Javascript　
 ```javascript
 import openSocket from "socket.io-client";
  const socket = openSocket("https://open-blog-api.herokuapp.com");
