@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const { validationResult } = require("express-validator");
 exports.signup = async (req, res, next) => {
-  const errors = validationResult(req);
+  const errors = await validationResult(req);
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
